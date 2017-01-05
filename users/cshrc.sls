@@ -24,5 +24,6 @@ users_{{ name }}_user_cshrc:
     - source:
       - salt://users/files/cshrc/{{ name }}/cshrc
       - salt://users/files/cshrc/cshrc
+    - template: jinja
 {% endif %}
 {% endfor %}
